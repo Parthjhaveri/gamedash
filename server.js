@@ -1,12 +1,11 @@
 const express = require('express');
 const Sequelize = require('sequelize');
-const sequelizeConnection = require('./sequelize-connection');
 const bodyParser = require('body-parser');
 
 let app = express();
 
-app.use(bodyparser.urlencoded({ extended: false }));
-app.use(bodyparser.json())
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
 app.use(express.static('public'))
 
 
@@ -15,4 +14,4 @@ app.get('/*', function(req, res) {
 })
 
 
-app.listen(3000);
+app.listen(8000);

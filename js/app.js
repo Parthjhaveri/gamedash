@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Hello from "./components/Hello";
+import TestWidget from "./components/TestWidget";
 
-ReactDOM.render(<Hello />, document.getElementById('react'));
+ReactDOM.render(<TestWidget />, document.getElementById('react'));
